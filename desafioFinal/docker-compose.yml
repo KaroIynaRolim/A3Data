@@ -1,0 +1,8 @@
+services:
+  webapp:
+    container_name: desafio_final
+    build: .
+    image: desafio_final
+    command: start.sh jupyter lab --LabApp.token=''
+    ports:
+      - "8888:8888"
